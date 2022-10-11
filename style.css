@@ -1,0 +1,11 @@
+.glo-msg{
+ background: rgba(57, 54, 54, 0.027);
+ width: 100%;
+
+ display: flex;
+ justify-content: space-around;
+ align-content: flex-end;
+}
+body{
+    background: #56595b5b;
+}

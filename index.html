@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Reference Check</title>
+     <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="wrapper">
+    <div class="container">'
+        <!-- Global msg section -->
+        <div class="glo-msg">
+        <div class="weltext">Welcome Home!!</div>
+        <div class="social">
+            <i class="fa-brands fa-facebook bg-success"></i>
+            <i class="fa-brands fa-instagram bg-danger"></i>
+            <i class="fa-brands fa-linkedin bg-primary"></i>
+        </div></div>
+    <!-- Search Bar section -->
+    <div class="row">
+        <div class="col">
+            <form class="d-flex mt-5 md-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            
+              </form>
+        </div>
+    </div>
+
+    <!-- Data input Section -->
+    <!-- Title -->
+    <div class="row">
+        <div class="col text-center mt-5">
+            <h2>Reference Check</h2>
+            <hr/>
+        </div>
+    </div>
+
+    <!-- form section -->
+    <form action="javascript:void(0)" onsubmit="handleOnSubmit(this)">
+  <div class="row">
+       <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Application No:</label>
+          <input name="task" type="text" class="form-control" id="inputEmail4" placeholder="Number">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Full Name:</label>
+          <input name="hr" type="text" class="form-control" id="inputPassword4" placeholder="Enter Your Full Name">
+        </div>
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Job Title:</label>
+            <input name="title" type="text" class="form-control" id="inputEmail4" placeholder="Enter Job Title">
+          </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Reference Name:</label>
+            <input name="referee" type="text" class="form-control" id="inputPassword4" placeholder="Enter the Referee name">
+          </div>
+      
+    
+    
+        <div class="col mt-5 text-center">
+      <button class="btn btn-primary">
+        <i class="fa-solid fa-pen-to-square"></i> Sign Up
+      </button> </div>
+  </div>
+  </form>
+    <!-- List Section -->
+
+     <div class="row md-6">
+        <div class="col md-6">
+            <h2 class="text-center mt-5"> Reference Page Table</h2>
+            <hr/>
+            <table class="table table-striped">
+                <tbody id="task-list"></tbody>
+                
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Abishkar rai</td>
+                        <td>Frontend programmer</td>
+                        <td>rai abishkar</td>
+                    
+                 <td>
+                <button class="btn btn-success">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+
+    </div>
+
+</div>
+
+   <script src="script.js"></script> 
+</body>
+</html>
